@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 15:19:51 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/05 15:30:37 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/05 19:30:52 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,6 @@ char	*ft_strrchr(const char *s, int c)
 			return ((char *)(s + i));
 		i--;
 	}
-
 	return (NULL);
 }
 
