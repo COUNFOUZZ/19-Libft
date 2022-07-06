@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/06 13:47:47 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/06 16:44:35 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/06 16:46:37 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,8 @@
 
 void	*ft_memset(void *b, int c, size_t len)
 {
-	size_t i;
-	unsigned char *str;
+	size_t			i;
+	unsigned char	*str;
 
 	i = 0;
 	str = (unsigned char *)b;
