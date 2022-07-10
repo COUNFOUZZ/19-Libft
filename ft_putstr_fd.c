@@ -5,17 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/09 11:59:43 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/09 12:06:17 by aabda            ###   ########.fr       */
+/*   Created: 2022/07/10 12:45:50 by aabda             #+#    #+#             */
+/*   Updated: 2022/07/10 12:48:29 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void    ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(char *s, int fd)
 {
-    size_t  i;
-    
-    i = ft_strlen(s);
-    write(fd, s, i);
+	size_t	i;
+
+	i = ft_strlen(s);
+	write(fd, s, i);
 }
