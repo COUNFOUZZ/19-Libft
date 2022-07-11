@@ -6,11 +6,10 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/11 18:08:44 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/11 18:26:00 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/11 18:40:27 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
