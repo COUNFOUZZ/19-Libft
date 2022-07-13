@@ -6,12 +6,26 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/13 14:53:52 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/13 15:50:25 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/13 18:43:23 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include <stdio.h>
+#include <stdio.h>
 #include "libft.h"
+
+static int	is_in(const char *s, char c)
+{
+	size_t	i;
+
+	i = 0;
+	while (s[i])
+	{
+		if (s[i] == c)
+			return (1);
+		i++;
+	}
+	return (0);
+}
 
 char	*ft_strtrim(char const *s1, char const *set)
 {
@@ -41,11 +55,11 @@ char	*ft_strtrim(char const *s1, char const *set)
 	return (str);
 }
 
-// int	main(void)
-// {
-// 	char	str[] = "Salut pote";
+int	main(void)
+{
+	char	str[] = "Salut pote";
 
-// 	printf("%s\n", ft_strtrim(str, "auoe"));
+	printf("%s\n", ft_strtrim(str, "auope"));
 
-// 	return (0);
-// }
+	return (0);
+}
