@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 17:26:45 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/14 17:56:56 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/14 18:09:58 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		i++;
 		start++;
 	}
+	str[i] = '\0';
 	return (str);
 }
