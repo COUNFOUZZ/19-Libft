@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 12:47:17 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/07 17:10:01 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/14 16:03:16 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strdup(const char *s)
 
 	str = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
 	if (!str)
-		return (0);
+		return (NULL);
 	i = 0;
 	while (s[i])
 	{
