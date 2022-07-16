@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/16 15:41:56 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/16 16:19:01 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/16 16:32:55 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,5 +28,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		str[i] = (f)(i, s[i]);
 		i++;
 	}
+	str[i] = '\0';
 	return (str);
 }
