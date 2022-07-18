@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/05 14:42:22 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/07 14:16:15 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/18 13:43:33 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,8 +20,10 @@ char	*ft_strchr(const char *s, int c)
 	while (s[i])
 	{
 		if (s[i] == c)
-			return ((char *)(s + i));
+			return ((char *)&s[i]);
 		i++;
 	}
+	if (s[i] == 0 && c == 0)
+		return ((char *)&s[i]);
 	return (NULL);
 }
