@@ -6,7 +6,7 @@
 #    By: aabda <aabda@student.s19.be>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/17 15:21:55 by aabda             #+#    #+#              #
-#    Updated: 2022/07/18 17:58:41 by aabda            ###   ########.fr        #
+#    Updated: 2022/07/18 18:07:13 by aabda            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,11 +39,14 @@ OBJS_P2 = $(SRCS_P2:.c=.o)
 
 all: $(NAME)
 
-%.o : %.c
+%.o: %.c
 	$(CC) $(FLAGS) -o $@ -c $< $(FLAGS)
 
 $(NAME): $(OBJS_P1) $(OBJS_P2)
 	ar rcs $@ $^
+
+norm:
+	norminette
 
 clean:
 	rm -f *.o
