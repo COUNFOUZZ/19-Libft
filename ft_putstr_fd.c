@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/10 12:45:50 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/10 12:48:29 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/18 13:53:19 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	ft_putstr_fd(char *s, int fd)
 {
 	size_t	i;
 
+	if (!s || fd < 0)
+		return ;
 	i = ft_strlen(s);
 	write(fd, s, i);
 }
