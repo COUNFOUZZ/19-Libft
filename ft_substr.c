@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/14 17:26:45 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/14 18:09:58 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/18 13:02:15 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,13 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	size_t	i;
 
 	str = malloc(sizeof(char) * (len + 1));
-	if (!str)
+	if (!str || !s)
 		return (NULL);
+	if (start > (unsigned int)ft_strlen(s))
+	{
+		str[0] = '\0';
+		return (str);
+	}
 	i = 0;
 	while (s[start] && (i < len))
 	{
