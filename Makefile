@@ -6,7 +6,7 @@
 #    By: aabda <aabda@student.s19.be>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/17 15:21:55 by aabda             #+#    #+#              #
-#    Updated: 2022/07/18 18:07:13 by aabda            ###   ########.fr        #
+#    Updated: 2022/07/23 18:02:38 by aabda            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,7 +28,7 @@ SRCS_P1 = ft_isalpha.c ft_isdigit.c \
 	ft_strdup.c \
 
 SRCS_P2 = ft_substr.c ft_strjoin.c \
-	ft_strtrim.c \
+	ft_strtrim.c ft_split.c \
 	ft_itoa.c ft_strmapi.c \
 	ft_striteri.c ft_putchar_fd.c \
 	ft_putstr_fd.c ft_putendl_fd.c \
