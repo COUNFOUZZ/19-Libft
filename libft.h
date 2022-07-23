@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 11:58:38 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/18 17:57:44 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/23 18:02:13 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,7 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_strdup(const char *s);
+char	**ft_split(char const *s, char c);
 size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
