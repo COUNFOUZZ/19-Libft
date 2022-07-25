@@ -6,7 +6,7 @@
 #    By: aabda <aabda@student.s19.be>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/17 15:21:55 by aabda             #+#    #+#              #
-#    Updated: 2022/07/24 17:14:54 by aabda            ###   ########.fr        #
+#    Updated: 2022/07/25 14:53:22 by aabda            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -36,7 +36,7 @@ SRCS_P2 = ft_substr.c ft_strjoin.c \
 	ft_putnbr_fd.c \
 
 SRCS_B	= ft_lstnew.c ft_lstsize.c \
-	ft_lstlast.c
+	ft_lstlast.c ft_lstadd_back.c \
 
 OBJS_P1 = $(SRCS_P1:.c=.o)
 OBJS_P2 = $(SRCS_P2:.c=.o)
