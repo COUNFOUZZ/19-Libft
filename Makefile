@@ -6,13 +6,14 @@
 #    By: aabda <aabda@student.s19.be>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/17 15:21:55 by aabda             #+#    #+#              #
-#    Updated: 2022/07/23 18:02:38 by aabda            ###   ########.fr        #
+#    Updated: 2022/07/24 17:14:54 by aabda            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = libft.a
-CC = gcc
-FLAGS = -Wall -Wextra -Werror
+NAME	= libft.a
+CC		= gcc
+FLAGS	= -Wall -Wextra -Werror
+LIB		= ar rcs
 
 SRCS_P1 = ft_isalpha.c ft_isdigit.c \
 	ft_isalnum.c ft_isascii.c \
@@ -34,8 +35,12 @@ SRCS_P2 = ft_substr.c ft_strjoin.c \
 	ft_putstr_fd.c ft_putendl_fd.c \
 	ft_putnbr_fd.c \
 
+SRCS_B	= ft_lstnew.c ft_lstsize.c \
+	ft_lstlast.c
+
 OBJS_P1 = $(SRCS_P1:.c=.o)
 OBJS_P2 = $(SRCS_P2:.c=.o)
+OBJS_B	= $(SRCS_B:.c=.o)
 
 all: $(NAME)
 
@@ -43,7 +48,10 @@ all: $(NAME)
 	$(CC) $(FLAGS) -o $@ -c $< $(FLAGS)
 
 $(NAME): $(OBJS_P1) $(OBJS_P2)
-	ar rcs $@ $^
+	$(LIB) $@ $^
+
+bonus:		$(OBJS_B)
+			$(LIB) $(NAME) $(OBJS_B)
 
 norm:
 	norminette
