@@ -6,7 +6,7 @@
 /*   By: aabda <aabda@student.s19.be>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/04 11:58:38 by aabda             #+#    #+#             */
-/*   Updated: 2022/07/23 23:50:38 by aabda            ###   ########.fr       */
+/*   Updated: 2022/07/24 17:31:29 by aabda            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,6 +31,7 @@ int		ft_isprint(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
 int		ft_atoi(const char *str);
+int		ft_lstsize(t_list *lst);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 void	ft_putchar_fd(char c, int fd);
@@ -58,5 +59,6 @@ size_t	ft_strlen(const char *s);
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 t_list	*ft_lstnew(void *content);
+t_list	*ft_lstlast(t_list *lst);
 
 #endif
