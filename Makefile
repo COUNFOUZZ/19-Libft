@@ -6,7 +6,7 @@
 #    By: aabda <aabda@student.s19.be>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/17 15:21:55 by aabda             #+#    #+#              #
-#    Updated: 2022/07/25 22:12:59 by aabda            ###   ########.fr        #
+#    Updated: 2022/07/27 01:40:41 by aabda            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -61,7 +61,7 @@ norm:
 	norminette
 
 clean:
-	rm -f *.o
+	rm -f $(OBJS_P1) $(OBJS_P2) $(OBJS_B)
 
 fclean: clean
 	rm -f $(NAME)
