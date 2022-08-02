@@ -6,7 +6,7 @@
 #    By: aabda <aabda@student.s19.be>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/17 15:21:55 by aabda             #+#    #+#              #
-#    Updated: 2022/07/27 01:40:41 by aabda            ###   ########.fr        #
+#    Updated: 2022/08/02 17:57:16 by aabda            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,7 +49,7 @@ OBJS_B	= $(SRCS_B:.c=.o)
 all: $(NAME)
 
 %.o: %.c
-	$(CC) $(FLAGS) -o $@ -c $< $(FLAGS)
+	$(CC) $(FLAGS) -o $@ -c $<
 
 $(NAME): $(OBJS_P1) $(OBJS_P2)
 	$(LIB) $@ $^
@@ -67,3 +67,5 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
+
+.PHONY:	all clean fclean re
